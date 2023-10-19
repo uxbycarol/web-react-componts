@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {Container} from '../../globalStyled';
 
 export const Nav = styled.nav`
-   background: #101522;
+   background: var(--black);
    height: 80px;
    display: flex;
    justify-content: center;
@@ -24,7 +24,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-   color: #fff;
+   color: var(--white);
    justify-self: flex-start;
    cursor: pointer;
    text-decoration: none;
@@ -67,7 +67,7 @@ export const NavMenu = styled.ul`
       left: ${({click}) => (click ? 0: '-100%')};
       opacity: 1;
       transition: all 0.5s ease;
-      background: #101522;
+      background: var(--black);
    }
 `;
 
@@ -76,7 +76,7 @@ export const NavItem = styled.li`
    border-bottom: 2px solid transparent;
 
    &:hover{
-      border-bottom: 2px solid #4b59f7;
+      border-bottom: 2px solid var(--secundary);
    }
 
    @media screen and (max-width: 960px){
@@ -89,7 +89,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-   color: #fff;
+   color: var(--white);
    display: flex;
    align-items: center;
    text-decoration: none;
@@ -103,7 +103,7 @@ export const NavLinks = styled(Link)`
       display: table;
 
       &:hover{
-         color: #4b59f7;
+         color: var(--secundary);
          transition: all 0.5 ease;
       }
    }

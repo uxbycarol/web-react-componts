@@ -25,11 +25,11 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-   border-radius: 4px;
-   background: ${({primary}) => (primary ? '#4b59f7': '#0467fb')};
+   border-radius: var(--border-radious);
+   background: ${({primary}) => (primary ? 'var(--primary);': 'var(--secundary);')};
    white-space: nowrap;
-   padding: ${({big}) => (big ? '12px 64px':'10px 20px')};
-   color: #fff;
+   padding: ${({big}) => (big ? 'var(--padding-Left-Right-button) var(--padding-Top-Bottom-button)':'10px 20px')};
+   color: var(--white);
    font-size: ${({fontBig}) => (fontBig ? '20px': '16px')};
    outline: none;
    border: none;
@@ -37,8 +37,8 @@ export const Button = styled.button`
 
    &:hover{
       transition: all 0.3s ease;
-      background: #fff;
-      background: ${({primary}) => (primary ? '#0467fb': '#4b59f7')};
+      background: var(--white);
+      background: ${({primary}) => (primary ? 'var(--secundary);': 'var(--primary);')};
    }
 
    @media screen and (max-width: 960px){

@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root{
+  --black:#202020;
+  --white:#fcfcfc;
+  --secundary-white: #f8f8f8;
+  --primary:#e36ce1;
+  --secundary: #0467fb;
+  --unity-xs: 4px;
+  --unity-s: 8px;
+  --unity-m: 16px;
+  --unity-l: 24px;
+  --unity-xl:32px;
+  --unity-2xl:64px;
+  --border-radious:var(--unity-s);
+  --padding-Top-Bottom-button:var(--unity-l);
+  --padding-Left-Right-button:var(--unity-m)
+}
