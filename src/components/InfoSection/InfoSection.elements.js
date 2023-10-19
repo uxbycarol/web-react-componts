@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const InfoSec = styled.div`
-   color: #fff;
+   color: var(--white);
    padding: 160px 0;
-   background: ${({lightBg}) => (lightBg ? '#fff':'#101522')};
+   background: ${({lightBg}) => (lightBg ? 'var(--white);':'var(--black);')};
 `;
-
 export const InfoRow = styled.div`
    display: flex;
    margin: 0 15px -15px -15px;
@@ -34,37 +33,37 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
    max-width: 540px;
    padding-top: 0;
-   padding-bottom: 60px;
+   padding-bottom: 3.5rem;
 
    @media screen and (max-width: 768px){
-      padding-bottom: 65px;
+      padding-bottom: 4rem;
 
    }
 `;
 
 export const TopLine = styled.div`
-   color: ${({lightTopLine}) => (lightTopLine ? '#a9b3c1':'#4859f7')};
-   font-size: 18px;
-   line-height: 16px;
+   color: ${({lightTopLine}) => (lightTopLine ? 'var(--black)':'var(--white)')};
+   font-size: clamp(1rem, 1.5vw, 2rem);
+   line-height: 120%;
    font-weight: 700;
-   letter-spacing: 1.4px;
-   margin-bottom: 16px;
+   letter-spacing: 0.04em;
+   margin-bottom: 1rem;
 `;
 
 export const Heading = styled.h1`
-   margin-bottom: 24px;
-   font-size: 48px;
+   margin-bottom: 1.5rem;
+   font-size: clamp(2rem, 2.5vw, 4rem);
    line-height: 1.2;
-   color: ${({lightText}) => (lightText ? '#f7f8fa':'#1c2237')};
+   color: ${({lightText}) => (lightText ? 'var(--white)':'var(--black)')};
 
 `;
 
 export const Subtitle = styled.p`
    max-width: 440px;
-   margin-bottom: 35px;
-   font-size: 18px;
-   line-height: 24px;
-   color: ${({lightTextDesc}) => (lightTextDesc ? '#a9b3c1':'#1c2237')};
+   margin-bottom: 2rem;
+   font-size: clamp(1rem, 1.2vw, 2rem);
+   line-height: 120%;
+   color: ${({lightTextDesc}) => (lightTextDesc ? 'var(--white)':'var(--black)')};
 `;
 
 export const ImgWrapper = styled.div`
