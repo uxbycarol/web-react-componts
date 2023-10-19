@@ -13,7 +13,7 @@ import {Nav,
         NavItemBtn,
         NavBtnLink} from './Navbar.elements';
 
-const Navbar = () => {
+const Navbar = ({id}) => {
 
    const [click, setClick] = useState(false);
    const [button, setButton] = useState(true);
@@ -38,7 +38,7 @@ const Navbar = () => {
    return (
       <>
          <IconContext.Provider value={{color: 'var(--white)'}}>
-            <Nav>
+            <Nav id={id}>
                <NavbarContainer>
                   <NavLogo to='/' onClick={closeMobileMenu}>
                      <NavIcon />

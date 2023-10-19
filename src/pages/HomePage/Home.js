@@ -5,7 +5,7 @@ import { InfoSection, Pricing } from '../../components'
 const Home = () => {
    return (
       <>
-         <InfoSection {...homeObjOne} />
+         <InfoSection {...homeObjOne} id="id-1"/>
          <InfoSection {...homeObjTwo} />
          <InfoSection {...homeObjThree} />
          <Pricing />

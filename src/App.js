@@ -13,7 +13,7 @@ function App () {
       <Router>
          <GlobalStyle />
          <ScrollToTop />
-         <Navbar />
+         <Navbar id='nav'/>
          <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/services' exact component={Services} />
